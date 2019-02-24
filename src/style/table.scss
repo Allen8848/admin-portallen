@@ -1,0 +1,45 @@
+@import "index";
+$table-background:#f9fafc;
+$table-title-color:#333;
+.yoy-main{
+  .el-table tr{
+    height: 48px;
+  }
+  .el-table th, .el-table td{
+    height: 48px;
+    padding:0;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped td{
+    background: $table-background;
+  }
+  .el-table thead{
+    tr{
+      th{
+        color: $table-title-color;
+        background: $table-background;
+        .cell{
+          min-height: 28px;
+          height: 28px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  .el-table{
+    .cell{
+      min-height: 24px;
+      line-height: 24px;
+      margin-top: 11px;
+      margin-bottom: 11px;
+      text-overflow:inherit;
+      white-space:inherit;
+      overflow:inherit;
+    }
+  }
+}
+.pagination{
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
